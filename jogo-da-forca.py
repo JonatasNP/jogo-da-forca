@@ -1,19 +1,61 @@
 import os
 import random
-from palavras import palavras
+from palavras import palavras_facil, palavras_medio, palavras_dificil, palavras_expert
+
+
 
 def limpar_terminal():
     os.system('cls' if os.name == 'nt' else 'clear')
 
+limpar_terminal()
 
 def jogo_da_forca():
-    tentativas = 5
+    tentativas = ""
     letras_descobertas = []
     letras_erradas = []
+        
+    palavra, dica = "", "?"
+    
+    def selecionar_dificuldade():
+        print("Antes de começarmos, preciso que você escolha uma dificuldade para o jogo:\n")
+        print("\t(F)ácil: 6 tentativas; palavras simples; com dica.")
+        print("\t(M)édio: 5 tentativas; palavras não tão comuns; com dica.")
+        print("\t(D)ifícil: 4 tentativas; palavras muito incomuns; com dica.")
+        print("\t(E)xpert: 4 tentativas; palavras complexas; dica semioculta.\n")
+        dificuldade = input("Dificuldade? ").upper()
 
+        if dificuldade == "F":
+            limpar_terminal()
+            return 6, *random.choice(list(palavras_facil.items()))
+        
+        elif dificuldade == "M":
+            limpar_terminal()
+            return 5, *random.choice(list(palavras_medio.items()))
+        
+        elif dificuldade == "D":
+            limpar_terminal()
+            return 4, *random.choice(list(palavras_dificil.items()))
+        
+        elif dificuldade == "E":
+            limpar_terminal()
+            palavra, dica = random.choice(list(palavras_expert.items()))
+            return 4, palavra, (dica[0] + "?" * (len(dica) - 1))
+        
+        else:
+            limpar_terminal()
+            print("Opção inválida. Tente novamente.\n")
+            return selecionar_dificuldade()
+    
+    print("Seja bem-vind@ ao clássico Jogo da Forca! 😀\n")
+    print("A sua missão é descobrir qual é a palavra secreta testando uma letra por vez.")
+    print("Mas cuidado! Suas tentativas são limitadas.")
+    print("Se você testar uma letra que não está na palavra, você perde uma tentativa. Se suas tentativas zerarem, você perde o jogo.\n")
+    print("\tImportante: neste jogo, caracteres similares, como A e À ou C e Ç, NÃO são considerados iguais.\n")
     
     
-    palavra, dica = random.choice(list(palavras.items()))
+    tentativas, palavra, dica = selecionar_dificuldade()
+    
+    
     
     for letra in palavra:
         if letra != " ":

@@ -1,6 +1,6 @@
-palavras = {
+palavras_facil = {
     # Frutas
-   "ABACAXI": "Fruta",
+    "ABACAXI": "Fruta",
     "BANANA": "Fruta",
     "MELANCIA": "Fruta",
     "MORANGO": "Fruta",
@@ -8,26 +8,10 @@ palavras = {
     "LARANJA": "Fruta",
     "KIWI": "Fruta",
     "PÊSSEGO": "Fruta",
-    "MANGA": "Fruta",
     "GOIABA": "Fruta",
     "CEREJA": "Fruta",
-    "FRAMBOESA": "Fruta",
-    "AMORA": "Fruta",
-    "PERA": "Fruta",
-    "CAJU": "Fruta",
-    "ABACATE": "Fruta",
-    "FIGO": "Fruta",
-    "TANGERINA": "Fruta",
-    "JABUTICABA": "Fruta",
-    "PITANGA": "Fruta",
-    "MARACUJÁ": "Fruta",
-    "PITAIA": "Fruta",
-    "ACEROLA": "Fruta",
-    "TAMARINDO": "Fruta",
-    "LICHIA": "Fruta",
 
     # Animais
-    "HIPOPÓTAMO": "Animal",
     "ELEFANTE": "Animal",
     "GIRAFA": "Animal",
     "LEÃO": "Animal",
@@ -41,21 +25,8 @@ palavras = {
     "JACARÉ": "Animal",
     "TARTARUGA": "Animal",
     "ARARA": "Animal",
-    "PREGUIÇA": "Animal",
     "URSO": "Animal",
     "ZEBRA": "Animal",
-    "CORUJA": "Animal",
-    "CANGURU": "Animal",
-    "RAPOSA": "Animal",
-    "ANTÍLOPE": "Animal",
-    "TUCANO": "Animal",
-    "LAGARTO": "Animal",
-    "PINGUIM": "Animal",
-    "BALEIA": "Animal",
-    "POLVO": "Animal",
-    "GOLFINHO": "Animal",
-    "GALO": "Animal",
-    "BODE": "Animal",
 
     # Objetos
     "COMPUTADOR": "Objeto",
@@ -75,22 +46,12 @@ palavras = {
     "FONE": "Objeto",
     "VENTILADOR": "Objeto",
     "MICROFONE": "Objeto",
-    "NOTEBOOK": "Objeto",
-    "ABRIDOR": "Objeto",
     "GELADEIRA": "Objeto",
     "SOFÁ": "Objeto",
     "COPO": "Objeto",
-    "QUADRO": "Objeto",
-    "GUARDA-CHUVA": "Objeto",
-    "TRAVESSEIRO": "Objeto",
-    "PENTE": "Objeto",
     "PANELA": "Objeto",
-    "ESCOVA": "Objeto",
-    "COLHER": "Objeto",
-    "TORNEIRA": "Objeto",
 
     # Países
-    "GUIANA FRANCESA": "País",
     "BRASIL": "País",
     "ARGENTINA": "País",
     "CANADÁ": "País",
@@ -102,7 +63,6 @@ palavras = {
     "ÍNDIA": "País",
     "NIGÉRIA": "País",
     "AUSTRÁLIA": "País",
-    "RÚSSIA": "País",
     "EGITO": "País",
     "MÉXICO": "País",
     "URUGUAI": "País",
@@ -113,13 +73,6 @@ palavras = {
     "COREIA DO NORTE": "País",
     "ESPANHA": "País",
     "NORUEGA": "País",
-    "SUÉCIA": "País",
-    "FINLÂNDIA": "País",
-    "INDONÉSIA": "País",
-    "TAILÂNDIA": "País",
-    "ARÁBIA SAUDITA": "País",
-    "ÁFRICA DO SUL": "País",
-    "ISRAEL": "País",
 
     # Cores
     "VERMELHO": "Cor",
@@ -131,59 +84,150 @@ palavras = {
     "ROXO": "Cor",
     "ROSA": "Cor",
     "CINZA": "Cor",
-    "LARANJA": "Cor",
-    "BEGE": "Cor",
-    "BORDÔ": "Cor",
-    "VIOLETA": "Cor",
-    "TURQUESA": "Cor",
-    "MARROM": "Cor",
-    "AZUL-MARINHO": "Cor",
-    "ROSA-CHOQUE": "Cor",
-    "AMARELO-OURO": "Cor",
-    "CINZA-PRATA": "Cor",
-    "VERDE-OLIVA": "Cor",
 
     # Profissões
     "ARQUEÓLOGO": "Profissão",
-    "NEUROCIRURGIÃO": "Profissão",
-    "PALEONTÓLOGO": "Profissão",
-    "DIPLOMATA": "Profissão",
-    "BIOQUÍMICO": "Profissão",
-    "OCEANÓGRAFO": "Profissão",
     "ENGENHEIRO": "Profissão",
-    "ASTRÔNOMO": "Profissão",
-    "PROGRAMADOR": "Profissão",
-    "ARQUITETO": "Profissão",
-    "GEÓLOGO": "Profissão",
-    "RADIALISTA": "Profissão",
-    "ENFERMEIRO": "Profissão",
-    "FARMACÊUTICO": "Profissão",
-    "PSICÓLOGO": "Profissão",
-    "FISIOTERAPEUTA": "Profissão",
-    "VETERINÁRIO": "Profissão",
-    "ANTROPÓLOGO": "Profissão",
-    "HISTORIADOR": "Profissão",
-    "PUBLICITÁRIO": "Profissão",
 
     # Doenças
-    "ESQUIZOFRENIA": "Doença",
-    "OSTEOPOROSE": "Doença",
     "HIPERTENSÃO": "Doença",
-    "ANEMIA": "Doença",
-    "CATARATA": "Doença",
     "PNEUMONIA": "Doença",
     "MALÁRIA": "Doença",
-    "HANSENÍASE": "Doença",
     "SARAMPO": "Doença",
     "VARÍOLA": "Doença",
     "BRONQUITE": "Doença",
     "ASMA": "Doença",
-    "HEPATITE": "Doença",
-    "DIABETES": "Doença",
-    "TUBERCULOSE": "Doença",
-    "DENGUE": "Doença",
-    "MIGRÂNEA": "Doença",
-    "AUTISMO": "Doença",
-    "EPILEPSIA": "Doença",
-    "ALZHEIMER": "Doença"
 }
+
+
+
+
+palavras_medio = {
+    # Frutas
+    "TAMARINDO": "Fruta",
+    "PITAIA": "Fruta",
+    "LICHIA": "Fruta",
+    "FRAMBOESA": "Fruta",
+    "AMORA": "Fruta",
+    "GRAVIOLA": "Fruta",
+
+    # Animais
+    "ORNITORRINCO": "Animal",
+    "TUCANO": "Animal",
+    "CANGURU": "Animal",
+    "PINGUIM": "Animal",
+    "PREGUIÇA": "Animal",
+
+    # Objetos
+    "NOTEBOOK": "Objeto",
+    "MICROFONE": "Objeto",
+    "TRAVESSEIRO": "Objeto",
+    
+    # Países
+    "VENEZUELA": "País",
+    "TAILÂNDIA": "País",
+    "ISRAEL": "País",
+    "RÚSSIA": "País",
+    "NORUEGA": "País",
+    
+    # Cores
+    "VIOLETA": "Cor",
+    "BEGE": "Cor",
+    "MARROM": "Cor",
+    "TURQUESA": "Cor",
+    
+    # Profissões
+    "RADIALISTA": "Profissão",
+    "GEÓLOGO": "Profissão",
+    "PSICÓLOGO": "Profissão",
+    "FISIOTERAPEUTA": "Profissão",
+    
+    # Doenças
+    "OSTEOPOROSE": "Doença",
+    "HEPATITE": "Doença",
+    "VARÍOLA": "Doença",
+}
+
+
+
+
+palavras_dificil = {
+    # Frutas
+    "JABUTICABA": "Fruta",
+    "ACEROLA": "Fruta",
+    "MARACUJÁ": "Fruta",
+
+    # Animais
+    "HIPOPÓTAMO": "Animal",
+    "GOLFINHO": "Animal",
+    "LAGARTO": "Animal",
+    "CORUJA": "Animal",
+    
+    # Objetos
+    "ABRIDOR": "Objeto",
+    "ESCOVA": "Objeto",
+    "TORNEIRA": "Objeto",
+    
+    # Países
+    "ARÁBIA SAUDITA": "País",
+    "INDONÉSIA": "País",
+    "ÁFRICA DO SUL": "País",
+    
+    # Cores
+    
+    # Profissões
+    "PALEONTÓLOGO": "Profissão",
+    "BIOQUÍMICO": "Profissão",
+    "PUBLICITÁRIO": "Profissão",
+    
+    # Doenças
+    "HANSENÍASE": "Doença",
+    "TUBERCULOSE": "Doença",
+    "BRONQUITE": "Doença",
+}
+
+
+
+
+palavras_expert = {
+    # Comidas
+    
+    
+    # Bebidas
+    
+
+    # Animais
+    "AXOLOTE": "Animal",
+
+    # Objetos
+    "ESTETOSCÓPIO": "Objeto",
+    "ODÔMETRO": "Objeto",
+
+    # Países
+    "QUÊNIA": "País",
+    "KUAITE": "País",
+
+    # Cores
+    "ESMERALDA": "Cor",
+    "BORDÔ": "Cor",
+
+    # Profissões
+    "OCEANÓGRAFO": "Profissão",
+    "ANTROPÓLOGO": "Profissão",
+    "NEUROCIRURGIÃO": "Profissão",
+
+    # Doenças
+    "ENCEFALITE": "Doença",
+    "FIBROMIALGIA": "Doença",
+    "ESCLEROSE MÚLTIPLA": "Doença",
+    
+    # Verbos
+    "CORRER": "Verbo",
+    "CONGELAR": "Verbo",
+    "ESMAGAR": "Verbo",
+    "EMPILHAR": "Verbo",
+    "REMOVER": "Verbo",
+}
+
+
+
