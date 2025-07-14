@@ -25,7 +25,6 @@ palavras_facil = {
     "JACARÉ": "Animal",
     "TARTARUGA": "Animal",
     "ARARA": "Animal",
-    "URSO": "Animal",
     "ZEBRA": "Animal",
 
     # Objetos
@@ -48,7 +47,6 @@ palavras_facil = {
     "MICROFONE": "Objeto",
     "GELADEIRA": "Objeto",
     "SOFÁ": "Objeto",
-    "COPO": "Objeto",
     "PANELA": "Objeto",
 
     # Países
@@ -61,7 +59,6 @@ palavras_facil = {
     "ITÁLIA": "País",
     "CHINA": "País",
     "ÍNDIA": "País",
-    "NIGÉRIA": "País",
     "AUSTRÁLIA": "País",
     "EGITO": "País",
     "MÉXICO": "País",
@@ -84,6 +81,7 @@ palavras_facil = {
     "ROXO": "Cor",
     "ROSA": "Cor",
     "CINZA": "Cor",
+    "MARROM": "Cor",
 
     # Profissões
     "ARQUEÓLOGO": "Profissão",
@@ -112,6 +110,7 @@ palavras_medio = {
     "GRAVIOLA": "Fruta",
 
     # Animais
+    "URSO": "Animal",
     "ORNITORRINCO": "Animal",
     "TUCANO": "Animal",
     "CANGURU": "Animal",
@@ -120,6 +119,7 @@ palavras_medio = {
 
     # Objetos
     "NOTEBOOK": "Objeto",
+    "COPO": "Objeto",
     "MICROFONE": "Objeto",
     "TRAVESSEIRO": "Objeto",
     
@@ -129,11 +129,11 @@ palavras_medio = {
     "ISRAEL": "País",
     "RÚSSIA": "País",
     "NORUEGA": "País",
+    "ÁFRICA DO SUL": "País",
     
     # Cores
     "VIOLETA": "Cor",
     "BEGE": "Cor",
-    "MARROM": "Cor",
     "TURQUESA": "Cor",
     
     # Profissões
@@ -170,14 +170,14 @@ palavras_dificil = {
     
     # Países
     "ARÁBIA SAUDITA": "País",
+    "NIGÉRIA": "País",
     "INDONÉSIA": "País",
-    "ÁFRICA DO SUL": "País",
     
     # Cores
     
     # Profissões
     "PALEONTÓLOGO": "Profissão",
-    "BIOQUÍMICO": "Profissão",
+    "NEUROCIRURGIÃO": "Profissão",
     "PUBLICITÁRIO": "Profissão",
     
     # Doenças
@@ -212,9 +212,9 @@ palavras_expert = {
     "BORDÔ": "Cor",
 
     # Profissões
+    "BIOQUÍMICO": "Profissão",
     "OCEANÓGRAFO": "Profissão",
     "ANTROPÓLOGO": "Profissão",
-    "NEUROCIRURGIÃO": "Profissão",
 
     # Doenças
     "ENCEFALITE": "Doença",

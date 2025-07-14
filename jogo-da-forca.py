@@ -7,7 +7,14 @@ from palavras import palavras_facil, palavras_medio, palavras_dificil, palavras_
 def limpar_terminal():
     os.system('cls' if os.name == 'nt' else 'clear')
 
+
 limpar_terminal()
+print("Seja bem-vind@ ao clássico Jogo da Forca! 😀\n")
+print("A sua missão é descobrir qual é a palavra secreta testando uma letra por vez.")
+print("Mas cuidado! Suas tentativas são limitadas.")
+print("Se você testar uma letra que não está na palavra, você perde uma tentativa. Se suas tentativas zerarem, você perde o jogo.\n")
+print("\tImportante: neste jogo, caracteres similares, como A e À ou C e Ç, NÃO serão considerados iguais.\n")
+
 
 def jogo_da_forca():
     tentativas = ""
@@ -26,34 +33,29 @@ def jogo_da_forca():
 
         if dificuldade == "F":
             limpar_terminal()
-            return 6, *random.choice(list(palavras_facil.items()))
+            return 6, *random.choice(list(palavras_facil.items())), "Fácil"
         
         elif dificuldade == "M":
             limpar_terminal()
-            return 5, *random.choice(list(palavras_medio.items()))
+            return 5, *random.choice(list(palavras_medio.items())), "Médio"
         
         elif dificuldade == "D":
             limpar_terminal()
-            return 4, *random.choice(list(palavras_dificil.items()))
+            return 4, *random.choice(list(palavras_dificil.items())), "Difícil"
         
         elif dificuldade == "E":
             limpar_terminal()
             palavra, dica = random.choice(list(palavras_expert.items()))
-            return 4, palavra, (dica[0] + "?" * (len(dica) - 1))
+            return 4, palavra, (dica[0] + "?" * (len(dica) - 1)), "Expert"
         
         else:
             limpar_terminal()
             print("Opção inválida. Tente novamente.\n")
             return selecionar_dificuldade()
     
-    print("Seja bem-vind@ ao clássico Jogo da Forca! 😀\n")
-    print("A sua missão é descobrir qual é a palavra secreta testando uma letra por vez.")
-    print("Mas cuidado! Suas tentativas são limitadas.")
-    print("Se você testar uma letra que não está na palavra, você perde uma tentativa. Se suas tentativas zerarem, você perde o jogo.\n")
-    print("\tImportante: neste jogo, caracteres similares, como A e À ou C e Ç, NÃO são considerados iguais.\n")
     
     
-    tentativas, palavra, dica = selecionar_dificuldade()
+    tentativas, palavra, dica, dificuldade = selecionar_dificuldade()
     
     
     
@@ -67,8 +69,9 @@ def jogo_da_forca():
     
     def status():
         print(f"Dica: {dica}", end="     ")
-        print(f"Letras erradas: {letras_erradas}", end="     ")
-        print(f"Tentativas restantes: {tentativas}\n")
+        print(f"Tentativas restantes: {tentativas}", end="     ")
+        print(f"Dificuldade: {dificuldade}", end="     ")
+        print(f"Letras erradas: {letras_erradas}\n")
         print("\t", end="")
         for letra in letras_descobertas:    
             print(letra, end=" ")
@@ -110,13 +113,22 @@ def jogo_da_forca():
         if not "_" in letras_descobertas:
             limpar_terminal()
             print("Você venceu! Parabéns! 🥳")
-            print(f"A palavra era: {palavra}")
+            print(f"A palavra era: {palavra}\n")
             break
             
         elif tentativas == 0:
             limpar_terminal()
             print("Infelizmente, você perdeu... 😔")
-            print(f"A palavra era: {palavra}")
+            print(f"A palavra era: {palavra}\n")
             break
+        
+    jogarNovamente = input("Jogar novamente (s/n)? ")
+    
+    if jogarNovamente == "s":
+        limpar_terminal()
+        jogo_da_forca()
+    else:
+        limpar_terminal()
+        return "Programa encerrado."
 
 jogo_da_forca()
