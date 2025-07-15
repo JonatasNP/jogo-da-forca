@@ -23,12 +23,10 @@ palavras_facil = {
     "PATO": "Animal",
     "GALINHA": "Animal",
     "JACARÉ": "Animal",
-    "TARTARUGA": "Animal",
     "ARARA": "Animal",
     "ZEBRA": "Animal",
 
     # Objetos
-    "COMPUTADOR": "Objeto",
     "CADEIRA": "Objeto",
     "MESA": "Objeto",
     "TELEVISÃO": "Objeto",
@@ -43,8 +41,6 @@ palavras_facil = {
     "TESOURA": "Objeto",
     "CADERNO": "Objeto",
     "FONE": "Objeto",
-    "VENTILADOR": "Objeto",
-    "MICROFONE": "Objeto",
     "GELADEIRA": "Objeto",
     "SOFÁ": "Objeto",
     "PANELA": "Objeto",
@@ -66,8 +62,6 @@ palavras_facil = {
     "PARAGUAI": "País",
     "PERU": "País",
     "VENEZUELA": "País",
-    "COREIA DO SUL": "País",
-    "COREIA DO NORTE": "País",
     "ESPANHA": "País",
     "NORUEGA": "País",
 
@@ -88,7 +82,6 @@ palavras_facil = {
     "ENGENHEIRO": "Profissão",
 
     # Doenças
-    "HIPERTENSÃO": "Doença",
     "PNEUMONIA": "Doença",
     "MALÁRIA": "Doença",
     "SARAMPO": "Doença",
@@ -110,20 +103,24 @@ palavras_medio = {
     "GRAVIOLA": "Fruta",
 
     # Animais
+    "TARTARUGA": "Animal",
     "URSO": "Animal",
-    "ORNITORRINCO": "Animal",
     "TUCANO": "Animal",
     "CANGURU": "Animal",
     "PINGUIM": "Animal",
     "PREGUIÇA": "Animal",
 
     # Objetos
+    "COMPUTADOR": "Objeto",
+    "VENTILADOR": "Objeto",
     "NOTEBOOK": "Objeto",
     "COPO": "Objeto",
     "MICROFONE": "Objeto",
     "TRAVESSEIRO": "Objeto",
     
     # Países
+    "COREIA DO SUL": "País",
+    "COREIA DO NORTE": "País",
     "VENEZUELA": "País",
     "TAILÂNDIA": "País",
     "ISRAEL": "País",
@@ -158,12 +155,14 @@ palavras_dificil = {
     "MARACUJÁ": "Fruta",
 
     # Animais
+    "ORNITORRINCO": "Animal",
     "HIPOPÓTAMO": "Animal",
     "GOLFINHO": "Animal",
     "LAGARTO": "Animal",
     "CORUJA": "Animal",
     
     # Objetos
+    "MICROFONE": "Objeto",
     "ABRIDOR": "Objeto",
     "ESCOVA": "Objeto",
     "TORNEIRA": "Objeto",
@@ -174,6 +173,8 @@ palavras_dificil = {
     "INDONÉSIA": "País",
     
     # Cores
+    "ESMERALDA": "Cor",
+    "BORDÔ": "Cor",
     
     # Profissões
     "PALEONTÓLOGO": "Profissão",
@@ -206,10 +207,6 @@ palavras_expert = {
     # Países
     "QUÊNIA": "País",
     "KUAITE": "País",
-
-    # Cores
-    "ESMERALDA": "Cor",
-    "BORDÔ": "Cor",
 
     # Profissões
     "BIOQUÍMICO": "Profissão",

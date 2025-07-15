@@ -3,6 +3,13 @@ import random
 from palavras import palavras_facil, palavras_medio, palavras_dificil, palavras_expert
 
 
+banco_facil = palavras_facil.copy()
+banco_medio = palavras_medio.copy()
+banco_dificil = palavras_dificil.copy()
+banco_expert = palavras_expert.copy()
+
+
+
 
 def limpar_terminal():
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -28,25 +35,45 @@ def jogo_da_forca():
         print("\t(F)ácil: 6 tentativas; palavras simples; com dica.")
         print("\t(M)édio: 5 tentativas; palavras não tão comuns; com dica.")
         print("\t(D)ifícil: 4 tentativas; palavras muito incomuns; com dica.")
-        print("\t(E)xpert: 4 tentativas; palavras complexas; dica semioculta.\n")
+        print("\t(E)xpert: 4 tentativas; palavras complexas; dica semioculta; um caractere da palavra é bloqueado.\n")
         dificuldade = input("Dificuldade? ").upper()
 
         if dificuldade == "F":
+            if not banco_facil:
+                print("⚠️ Não há mais palavras disponíveis nesta dificuldade.")
+                return selecionar_dificuldade()
+            palavra, dica = random.choice(list(banco_facil.items()))
+            del banco_facil[palavra]
             limpar_terminal()
-            return 6, *random.choice(list(palavras_facil.items())), "Fácil"
+            return 6, palavra, dica, "Fácil"
         
         elif dificuldade == "M":
+            if not banco_medio:
+                print("⚠️ Não há mais palavras disponíveis nesta dificuldade.")
+                return selecionar_dificuldade()
+            palavra, dica = random.choice(list(banco_medio.items()))
+            del banco_medio[palavra]
             limpar_terminal()
-            return 5, *random.choice(list(palavras_medio.items())), "Médio"
+            return 5, palavra, dica, "Médio"
         
         elif dificuldade == "D":
+            if not banco_dificil:
+                print("⚠️ Não há mais palavras disponíveis nesta dificuldade.")
+                return selecionar_dificuldade()
+            palavra, dica = random.choice(list(banco_dificil.items()))
+            del banco_dificil[palavra]
             limpar_terminal()
-            return 4, *random.choice(list(palavras_dificil.items())), "Difícil"
+            return 4, palavra, dica, "Difícil"
         
         elif dificuldade == "E":
+            if not banco_expert:
+                print("⚠️ Não há mais palavras disponíveis nesta dificuldade.")
+                return selecionar_dificuldade()
+            palavra, dica = random.choice(list(banco_expert.items()))
+            del banco_expert[palavra]
             limpar_terminal()
-            palavra, dica = random.choice(list(palavras_expert.items()))
-            return 4, palavra, (dica[0] + "?" * (len(dica) - 1)), "Expert"
+            dica_modificada = dica[0] + "?" * (len(dica) - 2) + dica[-1]
+            return 4, palavra, dica_modificada, "Expert"
         
         else:
             limpar_terminal()
@@ -56,8 +83,7 @@ def jogo_da_forca():
     
     
     tentativas, palavra, dica, dificuldade = selecionar_dificuldade()
-    
-    
+        
     
     for letra in palavra:
         if letra != " ":
@@ -65,6 +91,11 @@ def jogo_da_forca():
         
         else:
             letras_descobertas.append(" ")
+    
+    
+    # EXPERT - Bloquear um caractere
+    if dificuldade == "Expert":
+        letras_descobertas[random.randint(0, len(palavra) - 1)] = "🔒"
     
     
     def status():
@@ -97,7 +128,7 @@ def jogo_da_forca():
         
         if tentativa in palavra:
             for i in range(len(palavra)):
-                if palavra[i] == tentativa:
+                if palavra[i] == tentativa and letras_descobertas[i] != "🔒":
                     letras_descobertas[i] = tentativa
             
             limpar_terminal()
@@ -117,9 +148,11 @@ def jogo_da_forca():
             break
             
         elif tentativas == 0:
+            percentual_acertos = len(letras_descobertas) * 100 / len(palavra)
             limpar_terminal()
             print("Infelizmente, você perdeu... 😔")
             print(f"A palavra era: {palavra}\n")
+            print(f"{percentual_acertos:.1f}% da palavra foi descoberta.")
             break
         
     jogarNovamente = input("Jogar novamente (s/n)? ")
@@ -129,6 +162,7 @@ def jogo_da_forca():
         jogo_da_forca()
     else:
         limpar_terminal()
+        print("Programa encerrado.")
         return "Programa encerrado."
 
 jogo_da_forca()
