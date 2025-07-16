@@ -205,6 +205,8 @@ palavras_expert = {
     "ODÔMETRO": "Objeto",
 
     # Países
+    "ESTÔNIA": "País",
+    "TAJIQUISTÃO": "País",
     "QUÊNIA": "País",
     "KUAITE": "País",
 
@@ -224,6 +226,7 @@ palavras_expert = {
     "ESMAGAR": "Verbo",
     "EMPILHAR": "Verbo",
     "REMOVER": "Verbo",
+    "EMPOBRECER": "Verbo",
 }
 
 
