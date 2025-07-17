@@ -202,7 +202,6 @@ palavras_expert = {
 
     # Objetos
     "ESTETOSCÓPIO": "Objeto",
-    "ODÔMETRO": "Objeto",
 
     # Países
     "ESTÔNIA": "País",
@@ -221,12 +220,12 @@ palavras_expert = {
     "ESCLEROSE MÚLTIPLA": "Doença",
     
     # Verbos
-    "CORRER": "Verbo",
-    "CONGELAR": "Verbo",
-    "ESMAGAR": "Verbo",
-    "EMPILHAR": "Verbo",
-    "REMOVER": "Verbo",
-    "EMPOBRECER": "Verbo",
+    # "CORRER": "Verbo",
+    # "CONGELAR": "Verbo",
+    # "ESMAGAR": "Verbo",
+    # "EMPILHAR": "Verbo",
+    # "REMOVER": "Verbo",
+    # "EMPOBRECER": "Verbo",
 }
 
 
